@@ -1,0 +1,6 @@
+mark johansson	waffle iron1	80	2
+mark johansson	waffle iron2	80	2
+mark johansson	waffle iron3	80	2
+nikita smith	waffle iron1	80	1
+nikita smith	waffle iron2	80	1
+nikita smith	waffle iron3	80	1

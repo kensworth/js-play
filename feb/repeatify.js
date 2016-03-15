@@ -1,3 +1,4 @@
+(function() {
 'use strict'
 String.prototype.repeatify = String.prototype.repeatify || function(number) {
     let string = ''
@@ -7,3 +8,4 @@ String.prototype.repeatify = String.prototype.repeatify || function(number) {
     return string
 }
 console.log('hello'.repeatify(3));
+})()

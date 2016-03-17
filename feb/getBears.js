@@ -13,7 +13,17 @@ function getBears(filepath, done) {
              compareBears(bears, dict)   
         })
     })
+    //this gets hoisted up
     function compareBears(bears, dict) {
-        
+        dict = dict.toString().split('\n')
+        bears = bears.toString().split('\n')
+            .filter(function(bear) {
+                return dict.indexOf(bear) !== -1
+            }) 
+        done(null, bears)
     }
 }
+
+getBears('bears.txt', function(err, bears) {
+    console.log(bears)
+})

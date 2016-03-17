@@ -35,6 +35,7 @@
 
     function w(num) {
         this.num = num
+        this.set = 7 
     }
     w.prototype = {
         print: function() { 
@@ -45,6 +46,7 @@
         }
     }     
     var x = new w(4)
+    console.log(x.set)
     x.print()
     x.add()
     x.print()

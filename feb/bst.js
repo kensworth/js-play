@@ -14,15 +14,15 @@
     // the difference between assigning every method in BST to 'this.something' is that with 'this.something' every instance of the type gets its own copy of the function. By attaching the functions to prototype, all instances share the same function instances
     BinarySearchTree.prototype.push = function(val){
         //these variables are local and not shared, but the function itself is shared
-       var root = this.root
+       let root = this.root
 
        if(!root){
           this.root = new Node(val)
           return
        }
 
-       var currentNode = root
-       var newNode = new Node(val) 
+       let currentNode = root
+       let newNode = new Node(val) 
 
        while(currentNode){
           if(val < currentNode.value){
@@ -48,7 +48,7 @@
     BinarySearchTree.prototype.print = function(node) {
         if(!node) {
             if(!this.root) return
-            var root = this.root
+            let root = this.root
             console.log(root.value)
             if(typeof root.left != 'undefined') BinarySearchTree.prototype.print(this.root.left)
             if(typeof root.right != 'undefined') BinarySearchTree.prototype.print(this.root.right)
@@ -59,7 +59,7 @@
             if(typeof node.right != 'undefined')BinarySearchTree.prototype.print(node.right) 
         }
     }
-    var bst = new BinarySearchTree()
+    let bst = new BinarySearchTree()
     bst.push(3)
     bst.push(2)
     bst.push(4)

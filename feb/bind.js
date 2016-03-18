@@ -1,3 +1,4 @@
+// 'use strict' would prevent this
 var x = 9
 var module = {
     x: 81,
